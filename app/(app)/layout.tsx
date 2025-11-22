@@ -2,6 +2,8 @@ import Navbar from '@/components/layout/Navbar';
 import ChatWidget from '@/components/chat/ChatWidget';
 import { AIContextProvider } from '@/components/chat/AIContext';
 
+export const dynamic = 'force-dynamic';
+
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <AIContextProvider>
