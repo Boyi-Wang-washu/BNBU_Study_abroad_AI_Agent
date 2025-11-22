@@ -180,7 +180,7 @@ export default function PlannerPage() {
                     战略目标：{TARGET_SCHOOL}
                   </h1>
                   <p className="font-mono text-sm text-[#888899] mt-1">
-                    目标 GPA: {TARGET_GPA.toFixed(2)} // 当前 GPA: {CURRENT_GPA.toFixed(2)}
+                    目标 GPA: {TARGET_GPA.toFixed(2)} | 当前 GPA: {CURRENT_GPA.toFixed(2)}
                   </p>
                 </div>
               </div>
