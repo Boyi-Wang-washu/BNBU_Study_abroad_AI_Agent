@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #08090D;
+  --foreground: #EAEAEA;
+  --primary: #D4AF37;
+  --secondary: #2A4B55;
+  --muted-foreground: #888899;
+  --text-body: #888899;
+  
+  /* Legacy support */
+  --space-violet: #08090D;
+  --space-black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-body);
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/5 border border-white/10;
+  }
+  
+  .text-muted {
+    color: var(--muted-foreground);
+  }
+  
+  .text-primary {
+    color: var(--primary);
+  }
+  
+  .border-primary {
+    border-color: var(--primary);
+  }
+}
+
